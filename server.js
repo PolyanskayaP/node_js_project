@@ -1,4 +1,4 @@
-var http = require('http');
+var http = require('http'); //node server.js
 var fs = require('fs');
 
 const PORT=8080; 
