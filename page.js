@@ -1,4 +1,4 @@
-var a = 10;
+/*var a = 10;
 var b = 20;
 
 var c = a + b;
@@ -19,3 +19,4 @@ document.write("<br>");
 for (i=0; i<10; i++) {
     document.write(" ;) "+ i + "</br>")
 }
+*/
