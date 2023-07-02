@@ -42,38 +42,6 @@
               justify-content: space-between;
               align-items: center;
             }
-.flip-container {
-  perspective: 1000px;
-}
-.flip-container.hover .flipper {
-  transform: rotateY(180deg);
-}
-.flip-container,
-.front,
-.back {
-  width: 32px;
-  height: 48px;
-}
-.flipper {
-  transition: 0.6s;
-  transform-style: preserve-3d;
-  position: relative;
-}
-.front,
-.back {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  cursor: pointer;
-}
-.front {
-  z-index: 2;
-  transform: rotateY(0deg);
-}
-.back {
-  transform: rotateY(180deg);
-}
 
       .menu-button {
             -webkit-appearance: none;
@@ -156,125 +124,200 @@
         которые имеют ограничения в физической активности или не могут заниматься спортом из-за здоровья.
   </div>
 
-  <div class="flip-container" onclick="this.classList.toggle('hover');">
-    <div class="flipper">
-      <div class="front">
-        111111
-      </div>
-      <div class="back">
-        222222
-      </div>
-    </div>
-  </div>
+  <br>
+  <h3 class="container">Для чего нужен миостимулятор TEMS-104.....? (думающее эмоджи)</h3>
+  <br>
 
-  <div class="container text-center">
-    <div class="row">
-      <div class="col align-self-start">
-        
-        <div class="flip-container" onclick="this.classList.toggle('hover');">
-          <div class="flipper">
-            <div class="front">
-              Улучшение выносливости
-            </div>
-            <div class="back">
-              Миостимуляция может улучшить выносливость, увеличивая силу и выносливость мышц. Для этого рекомендуется использовать низкочастотные импульсы (от 2 до 10 Гц) с длительностью до 1000 мс и интенсивностью до 30 мА (команда seq [X] [Y]). Параметры импульсов должны быть индивидуально настроены для каждого пациента в зависимости от его состояния и целей. Однако перед началом использования миостимуляции для улучшения выносливости необходимо проконсультироваться с врачом или специалистом по миостимуляции, чтобы оценить индивидуальные потребности и состояние пациента. Кроме того, необходимо сочетать миостимуляцию с правильным питанием и умеренной физической активностью для достижения наилучших результатов.
-            </div>
-          </div>
+  <div class="accordion container" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          Улучшение выносливости 
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          <strong>Миостимуляция может улучшить выносливость, увеличивая силу и выносливость мышц. Для этого рекомендуется использовать низкочастотные импульсы (от 2 до 10 Гц) с длительностью до 1000 мс и интенсивностью до 30 мА (команда seq [X] [Y]). Параметры импульсов должны быть индивидуально настроены для каждого пациента в зависимости от его состояния и целей. Однако перед началом использования миостимуляции для улучшения выносливости необходимо проконсультироваться с врачом или специалистом по миостимуляции, чтобы оценить индивидуальные потребности и состояние пациента. Кроме того, необходимо сочетать миостимуляцию с правильным питанием и умеренной физической активностью для достижения наилучших результатов.        
         </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          Увеличение обьема мышц
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <strong>Миостимуляция может помочь увеличить объем мышц, используя импульсы от 50 до 100 Гц с длительностью от 200 до 400 мс и интенсивностью от 50 до 100 мА (команда seq [x] [y]). Однако перед началом использования миостимуляции для увеличения объема мышц необходимо проконсультироваться со специалистом по миостимуляции, чтобы оценить индивидуальные потребности и состояние. Кроме того, необходимо сочетать миостимуляцию с питанием с повышением потребления белка и понижением потребления углеводов, а в случае с «сушкой» замещением хлеба и жиров низкокалорийными продуктами, прогулками или купанием в бассейне и регулярным сном        
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          Улучшение метаболизма и уменьшение жировой ткани
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <strong>Миостимуляция может улучшить метаболизм и уменьшить жировую ткань, стимулируя сокращение мышц и увеличивая потребление кислорода и энергии в организме. Для этого рекомендуется использовать импульсы от 50 до 100 Гц с длительностью до 400 мс и интенсивностью до 80 мА (команда seq [X] [Y]). Такая процедура должны быть повторяющейся неоднократно в течение дня, NEMS-104 позволяет не снимать одежду и комфортно выполнять процедуры даже во время работы. Однако перед началом использования миостимуляции для уменьшения жировой ткани необходимо проконсультироваться со специалистом по миостимуляции, чтобы оценить индивидуальные потребности и состояние пациента. Кроме того, для достижения наилучших результатов необходимо сочетать миостимуляцию с правильным питанием с понижением потребления углеводов и замещением хлеба и жиров низкокалорийными продуктами, прогулками или купанием в бассейне и регулярным сном
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+          Улучшение кровообращения
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <strong>Миостимуляция может улучшить кровообращение путем стимуляции сокращения мышц, что приводит к увеличению потока крови в соответствующих областях тела. Для этого рекомендуется использовать низкочастотные импульсы (от 1 до 10 Гц) с длительностью до 1000 мс и интенсивностью до 40 мА. 
+            Существенно улучшает достигаемый эффект применение команды ser[X], для последовательной стимуляции мышцы по цепочке в направлении оттока крови из конечности.
+            Перед началом использования миостимуляции для улучшения кровообращения необходимо проконсультироваться с врачом, чтобы исключить наличие тромбов в конечностях или другие нежелательные факторы.            
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          Восстановление после травм и операций
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <strong>Миостимуляция может помочь восстановлению после травм и операций, ускорив процесс заживления тканей, улучшив кровообращение и снизив мышечную напряженность. Для этого рекомендуется использовать низкочастотные импульсы (от 1 до 10 Гц) с длительностью до 1000 мс и интенсивностью до 40 мА. Также важно правильно выбрать места для электродов, чтобы достичь оптимального эффекта. Однако перед началом использования миостимуляции для восстановления после травм и операций необходимо проконсультироваться с врачом или специалистом по миостимуляции, чтобы оценить индивидуальные потребности и состояние пациента.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          Уменьшение болей в суставах
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <strong>Миостимуляция может помочь уменьшить боли в суставах путем улучшения кровообращения и снижения мышечной напряженности. Для этого рекомендуется использовать импульсы частотой от 50 Гц с длительностью до 400 мс и интенсивностью до 60 мА. Также важно правильно выбрать места для электродов, чтобы достичь оптимального эффекта. Существенно улучшить эффект поможет применение серий импульсов (команда ser [x]) на мышцах-сгибателях для улучшения снабжения суставов питательными веществами. Однако перед началом использования миостимуляции для уменьшения болей в суставах необходимо проконсультироваться с врачом или специалистом по миостимуляции, чтобы оценить индивидуальные потребности и состояние пациента.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          Уменьшение пролежней
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <strong>Миостимуляция может помочь уменьшить риск пролежней, улучшив кровообращение и тонус мышц. Для этого необходимо правильно настроить параметры импульсов, включая частоту, длительность и интенсивность. Оптимальные параметры зависят от индивидуальных потребностей и состояния пациента, поэтому рекомендуется консультация с врачом или специалистом по миостимуляции. В целом, для уменьшения риска пролежней рекомендуется использовать низкочастотные импульсы (до 50 Гц) с небольшой длительностью (до 200 мс) и низкой интенсивностью (до 30 мА). Также важно правильно выбрать места для электродов, чтобы достичь оптимального эффекта.
+        </div>
+      </div>
+    </div>
+  </div>  
+  
+  <br>
+  <h3 class="container">Как использовать? (эмоджи игровой приставки)</h3>
+  <br>
 
+  <br>
+  <div class="container">Инструкции</div>
+  <br>
+  <div class="container px-4 text-center">
+    <div class="row gx-5">
+      <div class="col">
+       <div class="p-3">Инструкция 1</div>
       </div>
-      <div class="col align-self-center">
-        
-      </div>
-      <div class="col align-self-end">
-        
+      <div class="col">
+        <div class="p-3">Инструкция 2</div>
       </div>
     </div>
   </div>
 
-  <div class="container text-center">
-    <div class="row">
-      <div class="col align-self-start">
-   
+  <br>
+  <div class="container px-4 text-center">
+    <div class="row gx-5">
+      <div class="col">
+       <div class="p-3">Команды миостимулятора</div>
       </div>
-      <div class="col align-self-center">
-        Увеличение обьема мышц
+      <div class="col">
+        <div class="p-3">Скачать редактор программ (иконка скачать или документ)</div>
       </div>
-      <div class="col align-self-end">
-     
+    </div>
+  </div>
+  <br>
+  <ul class="list-group container">
+    <li class="list-group-item">pulse [длительность]</li>
+    <li class="list-group-item">hit</li>
+    <li class="list-group-item">short</li>
+    <li class="list-group-item">long</li>
+    <li class="list-group-item">seq [частота][длительность]</li>
+    <li class="list-group-item">ser [частота][длительность][кол-во каналов]</li>
+  </ul>
+
+  <br>
+  <div class="container">Примеры программ</div>
+  <br>
+
+  <div class="row container">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Назначение 1 (файл 01-массаж шеи, далее текст</h5>
+          <p class="card-text">»Данная программа предназначена для расслабления мышц шеи после длительного нахождения в сидячем или лежачем положении»)</p>
+          <a href="#" class="btn btn-primary">Скачать (иконка)</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Назначение 2</h5>
+          <p class="card-text">...</p>
+          <a href="#" class="btn btn-primary">Скачать (иконка)</a>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="container text-center">
-    <div class="row">
-      <div class="col align-self-start">
-       
-      </div>
-      <div class="col align-self-center">
-      
-      </div>
-      <div class="col align-self-end">
-        Улучшение метаболизма и уменьшение жировой ткани
+  <div class="row container">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Назначение 15</h5>
+          <p class="card-text">...</p>
+          <a href="#" class="btn btn-primary">Скачать (иконка)</a>
+        </div>
       </div>
     </div>
+    
   </div>
 
-  <div class="container text-center">
-    <div class="row">
-      <div class="col align-self-start">
-        
-      </div>
-      <div class="col align-self-center">
-        Улучшение кровообращения
-      </div>
-      <div class="col align-self-end">
-        
-      </div>
-    </div>
-  </div>
+  <br>
+  <h3 class="container">Обратная связь (эмоджи телефона~~)</h3>
+  <div>формочка напишите почту, телефон, мы с вами свяжемсяс</div>
+  <br>
 
-  <div class="container text-center">
-    <div class="row">
-      <div class="col align-self-start">
-        Восстановление после травм и операций
-      </div>
-      <div class="col align-self-center">
-        
-      </div>
-      <div class="col align-self-end">
-      
-      </div>
-    </div>
-  </div>
+  <br>
+  <h3 class="container">Партнёрам (эмоджи работы~~)</h3>
+  <br>
 
-  <div class="container text-center">
-    <div class="row">
-      <div class="col align-self-start">
-     
+  <br>
+  <h3 class="container">Купить (эмоджи~~)</h3>
+  <br>
+  <br>
+  <div class="container px-4 text-center">
+    <div class="row gx-5">
+      <div class="col">
+       <div class="p-3">Сделать заказ, далее формочка</div>
       </div>
-      <div class="col align-self-center">
-        Уменьшение болей в суставах
-      </div>
-      <div class="col align-self-end">
-       
-      </div>
-    </div>
-  </div>
-
-  <div class="container text-center">
-    <div class="row">
-      <div class="col align-self-start">
-        
-      </div>
-      <div class="col align-self-center">
-       
-      </div>
-      <div class="col align-self-end">
-        Уменьшение пролежней
+      <div class="col">
+        <div class="p-3">Доставка [...]</div>
       </div>
     </div>
   </div>
+  <br>
 
   <footer class="bg-dark text-white text-center py-4 mt-4">
       <p>&copy; 2023 Медицинское оборудование. Все права защищены.</p>
