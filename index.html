@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Миостимулятор</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <style>
       body{
-  background: #ededed;
+  background: #ffffff;
 }
       .c-button {
             -webkit-appearance: none;
@@ -35,6 +37,7 @@
             -webkit-appearance: none;
               -moz-appearance: none;
                     appearance: none;
+            margin-right: 5px;
             min-width: 150px;
             border: 0;
             border-radius: 20px;
@@ -82,9 +85,12 @@
             cursor: pointer;
             }
       .menu-a { 
+        margin-right: 5px;
+        text-align: center;
         text-decoration: none; 
         color: #fff;
         font-family: inherit;
+        font-size: 20px;
         background:#8A2BE2; /*добавляем фон к пункту меню*/
         color:#fff; /*меняем цвет ссылок*/
         padding:0px 15px; /*добавляем отступ*/
@@ -99,8 +105,7 @@
         }
         
     </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
 </head>
 <body>
  
@@ -115,26 +120,67 @@
         <a class="navbar-brand" style="color: #FFFFFF;" href="#"><i class="bi bi-house-door-fill"></i></a>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active menu-a" aria-current="page" style="color: #FFFFFF;" href="#">Назначение</a>
+            <a class="nav-link active menu-a" aria-current="page" href="#">Назначение</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link menu-a" style="color: #FFFFFF;" href="#">Использование</a>
+            <a class="nav-link menu-a" href="#">Использование</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link menu-a" style="color: #FFFFFF;" href="#">Обратная связь</a>
+            <a class="nav-link menu-a" href="#">Обратная связь</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link menu-a" style="color: #FFFFFF;" href="#">Партнёрам</a>
+            <a class="nav-link menu-a" href="#">Партнёрам</a>
           </li>
         </ul>
         <form class="d-flex">
-          <button class="btn btn-outline-success white-button" style="color: #FFFFFF;" type="submit">Вход</button>
-          <button class="btn btn-outline-success white-button" style="color: #FFFFFF;" type="submit">Регистрация</button>
+          <button class="btn btn-outline-success white-button"
+          type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropVhod"
+          >Вход</button>
+          <button class="btn btn-outline-success white-button" type="submit"
+          type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropRegistr"
+          >Регистрация</button>
         </form>
       </div>
     </div>
   </nav>
 
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdropVhod" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Вход title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdropRegistr" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Регистрация title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="p-5 text-center bg-body-tertiary rounded-3">
       <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"></use></svg>
