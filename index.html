@@ -31,7 +31,29 @@
               outline: none;
               box-shadow: 0 0 0 4px #d1cbee;
             }
-      
+      .white-button {
+            -webkit-appearance: none;
+              -moz-appearance: none;
+                    appearance: none;
+            min-width: 150px;
+            border: 0;
+            border-radius: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            color: #8A2BE2;
+            background: #ffffff;
+            padding: 8px 16px;
+            font-size: 20px;
+            font-family: inherit;
+            cursor: pointer;
+            }
+      .white-button:hover {
+            background: #534c5abd;
+            }
+      .white-button:focus {
+              outline: none;
+              box-shadow: 0 0 0 4px #d1cbee;
+            }
       .header{
               background-color: #8A2BE2;
               height: 100px;
@@ -66,7 +88,7 @@
         background:#8A2BE2; /*добавляем фон к пункту меню*/
         color:#fff; /*меняем цвет ссылок*/
         padding:0px 15px; /*добавляем отступ*/
-        
+        min-width: 150px;
         line-height:50px; /*ровняем меню по вертикали*/
         display: block;         
       }
@@ -83,27 +105,35 @@
 <body>
  
 
-  <div class=" text-center" style="background-color:#8A2BE2">
-    <div class="row row-cols-5">
-      <div class="col">
-        <button class="menu-button container" type="button"><a class="menu-a" href='#'>Назначение</a></button>
-      </div>
-      <div class="col">
-        <button class="menu-button container" type="button"><a class="menu-a" href='#'>Как использовать</a></button>
-      </div>
-      <div class="col">
-        <button class="menu-button container" type="button"><a class="menu-a" href='#'>Обратная связь</a></button>
-      </div>
-      <div class="col">
-        <button class="menu-button container" type="button"><a class="menu-a" href='#'>Партнёрам</a></button>
-      </div>
-      <div class="col">
-        <button class="menu-button container" type="button"><a class="menu-a" href='#'>Купить</a></button>
+
+  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" style="background-color: #8A2BE2;" >
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color: #FFFFFF;"><i class="bi bi-list"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" style="color: #FFFFFF;" href="#"><i class="bi bi-house-door-fill"></i></a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active menu-a" aria-current="page" style="color: #FFFFFF;" href="#">Назначение</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-a" style="color: #FFFFFF;" href="#">Использование</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-a" style="color: #FFFFFF;" href="#">Обратная связь</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu-a" style="color: #FFFFFF;" href="#">Партнёрам</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button class="btn btn-outline-success white-button" style="color: #FFFFFF;" type="submit">Вход</button>
+          <button class="btn btn-outline-success white-button" style="color: #FFFFFF;" type="submit">Регистрация</button>
+        </form>
       </div>
     </div>
-  </div>
-
-
+  </nav>
 
 
   <div class="p-5 text-center bg-body-tertiary rounded-3">
@@ -219,6 +249,7 @@
   
   <br>
   <h3 class="container">Как использовать? (эмоджи игровой приставки)</h3>
+  <div><i class="bi bi-controller"></i></div>
   <br>
 
   <br>
