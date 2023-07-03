@@ -55,9 +55,12 @@
             font-size: 20px;
             font-family: inherit;
             cursor: pointer;
+            transition: 0.1s;
             }
       .white-button:hover {
-            background: #534c5abd;
+            background: #540b9ebd;
+            color:#FFFFFF;
+            transition: 0.1s;
             }
       .white-button:focus {
               outline: none;
@@ -170,7 +173,7 @@
         <a class="navbar-brand" style="color: #FFFFFF;" href="#"><img src="White_kv_075.png" style="background: transparent" /></a>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active menu-a" aria-current="page" href="#naznach">Назначение</a>
+            <a class="nav-link menu-a" href="#naznach">Назначение</a>
           </li>
           <li class="nav-item">
             <a class="nav-link menu-a" href="#ispolz">Использование</a>
@@ -183,10 +186,10 @@
           </li>
         </ul>
         <form class="d-flex">
-          <button class="btn btn-outline-success white-button"
+          <button class="white-button  "
           type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropVhod"
           >Вход</button>
-          <button class="btn btn-outline-success white-button" type="submit"
+          <button class="white-button" type="submit"
           type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropRegistr"
           >Регистрация</button>
         </form>
@@ -365,11 +368,11 @@
     <div class="row gx-5">
       <div class="col">
        <div><a href="./instr_prob.pdf" target="_blank"><img src="pdf_fiol.svg" style="background: transparent" /></a></div>
-       <div class="p-3"><a class="a-a" target="_blank" href="./instr_prob.pdf" >Инструкция 1</a></div>
+       <div class="p-3"><a class="a-a" target="_blank" href="./instr_prob.pdf" >Быстрая настройка NEMS-104</a></div>
       </div>
       <div class="col">
         <div><a href="./instr_prob.pdf" target="_blank"><img src="pdf_svg.svg" style="background: transparent" /></a></div>
-        <div class="p-3"><a class="a-black" href="./instr_prob.pdf" target="_blank">Инструкция 2</a></div>
+        <div class="p-3"><a class="a-black" href="./instr_prob.pdf" target="_blank">Использование прибора NEMS-104</a></div>
       </div>
 
       <div class="col">
@@ -472,15 +475,117 @@
         Сделать заказ
         Договор-оферта 
         <div class="row">
-          <div class="col-xs-12 col-md-12 col-lg-12">
-            <div class="list-group" id="list-tab" role="tablist">
-              <a class="list-group-item list-group-item-action active" id="list-bistr-list" data-bs-toggle="list" href="#" role="tab" aria-controls="list-home">С быстрым уменьшением оплаты за сервис</a>
-              <a class="list-group-item list-group-item-action" id="list-prod-list" data-bs-toggle="list" href="#" role="tab" aria-controls="list-profile">С продолжительной оплатой за сервис</a>
-              <a class="list-group-item list-group-item-action" id="list-min-list" data-bs-toggle="list" href="#" role="tab" aria-controls="list-messages">С минимальной оплатой за сервис</a>
+          <div class="col-xs-12 col-md-12 col-lg-4">
+            <div class="list-group" id="list-tab-oplata" role="tablist">
+              <a class="list-group-item list-group-item-action active" id="list-bistr-list" data-bs-toggle="list" href="#" role="tab" aria-controls="list-bistr">С быстрым уменьшением оплаты за сервис</a>
+              <a class="list-group-item list-group-item-action" id="list-prod-list" data-bs-toggle="list" href="#" role="tab" aria-controls="list-prod">С продолжительной оплатой за сервис</a>
+              <a class="list-group-item list-group-item-action" id="list-min-list" data-bs-toggle="list" href="#" role="tab" aria-controls="list-min">С минимальной оплатой за сервис</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-8">
+            <div class="tab-content" id="nav-tabContentOplata">
+              <div class="tab-pane fade show active" id="list-bistr" role="tabpanel" aria-labelledby="list-bistr-list">
+                
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark2</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td colspan="2">Larry the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+              <div class="tab-pane fade" id="list-prod" role="tabpanel" aria-labelledby="list-prod-list">
+                
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Boxes</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td colspan="2">Larry the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+              <div class="tab-pane fade" id="list-min" role="tabpanel" aria-labelledby="list-min-list">
+                
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Postamat</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td colspan="2">Larry the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
             </div>
           </div>
         </div>      
-
        </div>
       </div>
       <div class="col">
