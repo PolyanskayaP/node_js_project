@@ -4,27 +4,20 @@ function myFunction() {
     }
 
 function DisabledButton() {
-    document.getElementById("but_dis").disabled = ""
-}
-/*var a = 10;
-var b = 20;
-
-var c = a + b;
-alert(c);
-console.log("Сумма a+b="+c); //в консоль
-
-document.getElementById("d1").innerHTML = c;
-
-document.write("<p>Контент</p>");
-document.write("<button>Наша кнопка</button><br>");
-
-for (i=0; i<10; i++) {
-    document.write("<div> :) "+ i + "</div>")
+    document.getElementById("but_dis").disabled = ""; 
 }
 
-document.write("<br>");
-
-for (i=0; i<10; i++) {
-    document.write(" ;) "+ i + "</br>")
+//list-b-list
+function listToFiol(Id) {
+  /*  document.getElementById(Id).style.backgroundColor = "#8A2BE2";
+    
+    document.onclick = function(e) {
+        var o=document.getElementsByClassName('objects');
+        if ( e.target.nodeName != 'o' ) {
+            document.getElementById(Id).style.backgroundColor = "#ffffff";
+            document.getElementById(Id).style.color = "#f0f0f0";
+        }
+    //document.getElementById("list-p-list").style.color = "#000000";
+    //document.getElementById("list-m-list").style.color = "#000000";
+    };  */
 }
-*/

@@ -31,9 +31,15 @@
             font-size: 20px;
             font-family: inherit;
             cursor: pointer;
+            -webkit-box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2);
+              -moz-box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2);
+              box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2);
             }
       .c-button:hover {
             background: #5f1daa;
+            -webkit-box-shadow: -14px 14px 8px 0px rgba(34, 60, 80, 0.2);
+            -moz-box-shadow: -14px 14px 8px 0px rgba(34, 60, 80, 0.2);
+            box-shadow: -14px 14px 8px 0px rgba(34, 60, 80, 0.2);
             }
       .c-button:focus {
               outline: none;
@@ -56,11 +62,17 @@
             font-family: inherit;
             cursor: pointer;
             transition: 0.1s;
+            -webkit-box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2);
+            -moz-box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2);
+            box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2);
             }
       .white-button:hover {
             background: #540b9ebd;
             color:#FFFFFF;
             transition: 0.1s;
+            -webkit-box-shadow: -4px 14px 8px 0px rgba(34, 60, 80, 0.2);
+            -moz-box-shadow: -4px 14px 8px 0px rgba(34, 60, 80, 0.2);
+            box-shadow: -4px 14px 8px 0px rgba(34, 60, 80, 0.2);
             }
       .white-button:focus {
               outline: none;
@@ -139,6 +151,7 @@
         .carousel-control-prev /*, .carousel-indicators */ {
             filter: invert(100%);
         }
+   
 .flip-container {
   perspective: 1000px;
 }
@@ -229,7 +242,7 @@
 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Войти</button>
+          <button type="button" class="btn btn-primary" onclick="DisabledButton()">Войти</button>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>         
         </div>
       </div>
@@ -272,7 +285,7 @@
 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Далее</button>
+          <button type="button" class="btn btn-primary" onclick="DisabledButton()">Далее</button>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
         </div>
       </div>
@@ -642,7 +655,7 @@
             <div class="row">
               <div class="col-xs-12 col-md-12 col-lg-4">
                 <div class="list-group list-group-mine" id="list-tab-ZAK" role="tablist">
-                  <a class="list-group-item list-group-item-action active" id="list-b-list" data-bs-toggle="list" href="#list-b" role="tab" aria-controls="list-home">С быстрым уменьшением оплаты за сервис</a>
+                  <a class="list-group-item list-group-item-action active" id="list-b-list" data-bs-toggle="list" href="#list-b" role="tab" aria-controls="list-home" onclick="listToFiol(this.id)">С быстрым уменьшением оплаты за сервис</a>
                   <a class="list-group-item list-group-item-action" id="list-p-list" data-bs-toggle="list" href="#list-p" role="tab" aria-controls="list-profile">С продолжительной оплатой за сервис</a>
                   <a class="list-group-item list-group-item-action" id="list-m-list" data-bs-toggle="list" href="#list-m" role="tab" aria-controls="list-messages">С минимальной оплатой за сервис</a>
                 </div>
