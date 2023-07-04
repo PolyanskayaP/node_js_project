@@ -1,3 +1,4 @@
+
 function myFunction() {
     document.getElementById("exampleBut").innerHTML = "!";
     document.getElementById("exampleBut").style.backgroundColor = "#7701ff";
