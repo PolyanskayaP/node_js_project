@@ -1,4 +1,11 @@
+function myFunction() {
+    document.getElementById("exampleBut").innerHTML = "!";
+    document.getElementById("exampleBut").style.backgroundColor = "#7701ff";
+    }
 
+function DisabledButton() {
+    document.getElementById("but_dis").disabled = ""
+}
 /*var a = 10;
 var b = 20;
 
