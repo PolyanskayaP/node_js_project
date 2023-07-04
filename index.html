@@ -128,6 +128,13 @@
             background:#5f1daa;
             text-decoration: none; /*убираем подчеркивание текста ссылок*/      
         }
+      .list-group-mine .list-group-item:hover {
+        background-color: #8A2BE2;
+        }
+        .list-group-item[aria-expanded="true"]{
+        background-color: #8A2BE2 !important;
+        border-color: #b581f8;
+        }
 .flip-container {
   perspective: 1000px;
 }
@@ -592,131 +599,130 @@
     Наши партнёры могут приобрести миостимулятор TENS / NMS TESLAMT NEMS-104. 
   </div>
 
-  <div class="p-5 text-center bg-body-tertiary rounded-3">
-    <h3 class="text-body-emphasis container">Купить</h3>
-  </div>
-
   <div class="container px-4 text-center">
     <div class="row gx-5">
+
       <div class="col">
-       <div class="p-3">
+        <div class="p-3">
+            <div class="p-3"><a class="a-a" href="./instr_prob.pdf" target="_blank">Договор-оферта</a></div>
+            <div class="row">
+              <div class="col-xs-12 col-md-12 col-lg-4">
+                <div class="list-group list-group-mine" id="list-tab-ZAK" role="tablist">
+                  <a class="list-group-item list-group-item-action active" id="list-b-list" data-bs-toggle="list" href="#list-b" role="tab" aria-controls="list-home">С быстрым уменьшением оплаты за сервис</a>
+                  <a class="list-group-item list-group-item-action" id="list-p-list" data-bs-toggle="list" href="#list-p" role="tab" aria-controls="list-profile">С продолжительной оплатой за сервис</a>
+                  <a class="list-group-item list-group-item-action" id="list-m-list" data-bs-toggle="list" href="#list-m" role="tab" aria-controls="list-messages">С минимальной оплатой за сервис</a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-12 col-lg-8">
+                <div class="tab-content" id="nav-tabContent-ZAK">
+                  <div class="tab-pane fade show active" id="list-b" role="tabpanel" aria-labelledby="list-b-list">
 
-        Сделать заказ
-        Договор-оферта 
-        <div class="row">
-          <div class="col-xs-12 col-md-12 col-lg-4">
-            <div class="list-group" id="list-tab-oplata" role="tablist">
-              <a class="list-group-item list-group-item-action active" id="list-bistr-list" data-bs-toggle="list" href="#" role="tab" aria-controls="list-bistr">С быстрым уменьшением оплаты за сервис</a>
-              <a class="list-group-item list-group-item-action" id="list-prod-list" data-bs-toggle="list" href="#" role="tab" aria-controls="list-prod">С продолжительной оплатой за сервис</a>
-              <a class="list-group-item list-group-item-action" id="list-min-list" data-bs-toggle="list" href="#" role="tab" aria-controls="list-min">С минимальной оплатой за сервис</a>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Second</th>
+                          <th scope="col">Third</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>.7</td>
+                          <td>.</td>
+                          <td>.</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>.</td>
+                          <td>.</td>
+                          <td>.</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td colspan="2">...</td>
+                          <td>.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+
+                  <div class="tab-pane fade" id="list-p" role="tabpanel" aria-labelledby="list-p-list">
+                    
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Second</th>
+                          <th scope="col">Third</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>.8</td>
+                          <td>.</td>
+                          <td>.</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>.</td>
+                          <td>.</td>
+                          <td>.</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td colspan="2">...</td>
+                          <td>.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+                  <div class="tab-pane fade" id="list-m" role="tabpanel" aria-labelledby="list-m-list">
+                    
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Second</th>
+                          <th scope="col">Third</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>.9</td>
+                          <td>.</td>
+                          <td>.</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>.</td>
+                          <td>.</td>
+                          <td>.</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td colspan="2">...</td>
+                          <td>.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-md-12 col-lg-8">
-            <div class="tab-content" id="nav-tabContentOplata">
-              <div class="tab-pane fade show active" id="list-bistr" role="tabpanel" aria-labelledby="list-bistr-list">
-                
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark2</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td colspan="2">Larry the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
-                  </tbody>
-                </table>
 
-              </div>
-              <div class="tab-pane fade" id="list-prod" role="tabpanel" aria-labelledby="list-prod-list">
-                
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Boxes</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td colspan="2">Larry the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
-                  </tbody>
-                </table>
-
-              </div>
-              <div class="tab-pane fade" id="list-min" role="tabpanel" aria-labelledby="list-min-list">
-                
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Postamat</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td colspan="2">Larry the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
-                  </tbody>
-                </table>
-
-              </div>
-            </div>
-          </div>
-        </div>      
-       </div>
+        </div>
       </div>
+      
+
       <div class="col">
         <div class="p-3">
 
@@ -725,7 +731,7 @@
         
           <div class="row">
             <div class="col-xs-12 col-md-12 col-lg-4">
-              <div class="list-group" id="list-tab" role="tablist">
+              <div class="list-group" id="list-tab-DOST" role="tablist">
                 <a class="list-group-item list-group-item-action active" id="list-serb-list" data-bs-toggle="list" href="#list-serb" role="tab" aria-controls="list-home">Сербия</a>
                 <a class="list-group-item list-group-item-action" id="list-balk-list" data-bs-toggle="list" href="#list-balk" role="tab" aria-controls="list-profile">Балканы</a>
                 <a class="list-group-item list-group-item-action" id="list-kit-list" data-bs-toggle="list" href="#list-kit" role="tab" aria-controls="list-messages">Китай</a>
@@ -734,7 +740,7 @@
               </div>
             </div>
             <div class="col-xs-12 col-md-12 col-lg-8">
-              <div class="tab-content" id="nav-tabContent">
+              <div class="tab-content" id="nav-tabContent-DOST">
                 <div class="tab-pane fade show active" id="list-serb" role="tabpanel" aria-labelledby="list-serb-list">Пошта Србије : от 7 дней</div>
                 <div class="tab-pane fade" id="list-balk" role="tabpanel" aria-labelledby="list-balk-list">Пошта Србије : от 9 дней</div>
                 <div class="tab-pane fade" id="list-kit" role="tabpanel" aria-labelledby="list-kit-list">China Post : от 3 дней</div>
