@@ -142,7 +142,11 @@ body{
 .carousel-control-prev /*, .carousel-indicators */ {
     filter: invert(100%);
 }
-          
+.list-group {
+    --bs-list-group-active-bg: #8A2BE2;
+    --bs-list-group-active-border-color: #8A2BE2;
+}
+
 .flip-container {
     perspective: 1000px;
 }
