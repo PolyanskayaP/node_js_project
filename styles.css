@@ -1,0 +1,176 @@
+body{
+    background: #ffffff;
+  }
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    /* the rest of your styling */
+}
+.c-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+                appearance: none;
+        min-width: 150px;
+        border: 0;
+        border-radius: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: #ffffff;
+        background: #8A2BE2;
+        padding: 8px 16px;
+        font-size: 20px;
+        font-family: inherit;
+        cursor: pointer;
+        -webkit-box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2);
+        }
+.c-button:hover {
+        background: #5f1daa;
+        -webkit-box-shadow: -14px 14px 8px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: -14px 14px 8px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: -14px 14px 8px 0px rgba(34, 60, 80, 0.2);
+        }
+.c-button:focus {
+        outline: none;
+        box-shadow: 0 0 0 4px #d1cbee;
+        }
+.white-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+                appearance: none;
+        margin-right: 5px;
+        min-width: 150px;
+        border: 0;
+        border-radius: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: #8A2BE2;
+        background: #ffffff;
+        padding: 8px 16px;
+        font-size: 20px;
+        font-family: inherit;
+        cursor: pointer;
+        transition: 0.1s;
+        -webkit-box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2);
+        }
+.white-button:hover {
+        background: #540b9ebd;
+        color:#FFFFFF;
+        transition: 0.1s;
+        -webkit-box-shadow: -4px 14px 8px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: -4px 14px 8px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: -4px 14px 8px 0px rgba(34, 60, 80, 0.2);
+        }
+.white-button:focus {
+        outline: none;
+        box-shadow: 0 0 0 4px #d1cbee;
+        }
+.header{
+        background-color: #8A2BE2;
+        height: 100px;
+        }
+.site-header__wrapper {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+.menu-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+                appearance: none;
+        min-width: 150px;
+        border: 0;
+        border-radius: 0px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: #ffffff;
+        background: #8A2BE2;
+        padding: 8px 16px;
+        font-size: 20px;
+        font-family: inherit;
+        cursor: pointer;
+        }
+.menu-a { 
+    margin-right: 5px;
+    text-align: center;
+    text-decoration: none; 
+    color: #fff;
+    font-family: inherit;
+    font-size: 20px;
+    background:#8A2BE2; /*добавляем фон к пункту меню*/
+    color:#fff; /*меняем цвет ссылок*/
+    padding:0px 15px; /*добавляем отступ*/
+    min-width: 150px;
+    line-height:50px; /*ровняем меню по вертикали*/
+    display: block;         
+}
+.a-a {
+    color:#8A2BE2;
+    text-decoration: none; 
+    font-size: inherit;
+    }
+.a-a:hover {
+        color: #8A2BE2;
+        }
+.a-black {
+    color:#000000;
+    text-decoration: none; 
+    font-size: inherit;
+    }
+.a-black:hover {
+    color: #000000;
+    }
+.menu-a:hover {
+    color: #fff;
+    background:#5f1daa;
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/      
+    }
+.list-group-mine .list-group-item:hover {
+    background-color: #8A2BE2;
+}
+.list-group-item[aria-expanded="true"]{
+    background-color: #8A2BE2 !important;
+    border-color: #b581f8;
+}
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+          
+.flip-container {
+    perspective: 1000px;
+}
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+.flip-container,
+.front,
+.back {
+    width: 32px;
+    height: 48px;
+}
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.back {
+    transform: rotateY(180deg);
+}
