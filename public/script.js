@@ -1,5 +1,6 @@
 var flagVhod = false; 
 document.getElementById("but_dis").style.backgroundColor = "#c0c0c0"; 
+//document.getElementById("modalVhodButton").disabled = "disabled"; 
 
 function myFunction() {
     document.getElementById("exampleBut").innerHTML = "!";
@@ -34,6 +35,21 @@ function zapretVhod() {
         document.getElementById("messageKupit").innerText = "Войдите, чтобы купить";
     }
 }
+
+function validateForm() {
+    var x1 = document.getElementById("floatingMailVhod").innerText;
+    var x2 = document.getElementById("floatingPasswordVhod").innerText;
+    if ((x1 != "") && (x2 != "")) {
+        console.log("1");
+        document.getElementById("modalVhodButton").disabled = false; 
+    }
+    else {
+        document.getElementById("modalVhodButton").disabled = "disabled"; 
+    }
+} 
+
+
+
 
 //list-b-list
 function listToFiol(Id) {

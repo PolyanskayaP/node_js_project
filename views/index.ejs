@@ -42,6 +42,8 @@
       </div>
     </div>
   </nav>
+  
+  
 
   <!-- Modal Vhod-->
   <div class="modal fade" id="staticBackdropVhod" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -51,23 +53,25 @@
           <h1 class="modal-title fs-5" id="staticBackdropLabel">Вход</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingMailVhod" placeholder="name@example.com">
-            <label for="floatingInput">Электронная почта</label>
+        <form id="VhodForm">
+          <div class="modal-body">
             
-          </div>
-          <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="floatingPasswordVhod" placeholder="Password">
-            <label for="floatingPassword">Пароль</label>
-          </div>
+            <div class="form-floating mb-3" >
+              <input type="email" class="form-control " id="floatingMailVhod" placeholder="name@example.com">
+              <label for="floatingInput">Электронная почта</label>
+              
+            </div>
+            <div class="form-floating mb-3" >
+              <input type="password" class="form-control" id="floatingPasswordVhod" placeholder="Password">
+              <label for="floatingPassword">Пароль</label>
+            </div>
 
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" style="background-color: #8A2BE2; border-color: #8A2BE2;" onclick="DisabledButton(); textVhod()">Войти</button>
-          <button type="button" id="closeModalVhod" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>         
-        </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="modalVhodButton" class="btn btn-primary"  style="background-color: #8A2BE2; border-color: #8A2BE2;"  onclick="DisabledButton(); textVhod();">Войти</button>
+            <button type="button" id="closeModalVhod" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>         
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -491,28 +495,20 @@
                       <thead>
                         <tr>
                           <th scope="col">#</th>
-                          <th scope="col">First</th>
-                          <th scope="col">Second</th>
-                          <th scope="col">Third</th>
+                          <th scope="col">Вид</th>
+                          <th scope="col">&#x20bd; за ед.</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <th scope="row">1</th>
-                          <td>.7</td>
-                          <td>.</td>
-                          <td>.</td>
+                          <td>Розница</td>
+                          <td>23000</td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
-                          <td>.</td>
-                          <td>.</td>
-                          <td>.</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td colspan="2">...</td>
-                          <td>.</td>
+                          <td>Опт</td>
+                          <td>16000</td>
                         </tr>
                       </tbody>
                     </table>
@@ -525,28 +521,20 @@
                       <thead>
                         <tr>
                           <th scope="col">#</th>
-                          <th scope="col">First</th>
-                          <th scope="col">Second</th>
-                          <th scope="col">Third</th>
+                          <th scope="col">Вид</th>
+                          <th scope="col">&#x20bd; за ед.</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <th scope="row">1</th>
-                          <td>.8</td>
-                          <td>.</td>
-                          <td>.</td>
+                          <td>Розница</td>
+                          <td>25000</td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
-                          <td>.</td>
-                          <td>.</td>
-                          <td>.</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td colspan="2">...</td>
-                          <td>.</td>
+                          <td>Опт</td>
+                          <td>17000</td>
                         </tr>
                       </tbody>
                     </table>
@@ -558,28 +546,20 @@
                       <thead>
                         <tr>
                           <th scope="col">#</th>
-                          <th scope="col">First</th>
-                          <th scope="col">Second</th>
-                          <th scope="col">Third</th>
+                          <th scope="col">Вид</th>
+                          <th scope="col">&#x20bd; за ед.</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <th scope="row">1</th>
-                          <td>.9</td>
-                          <td>.</td>
-                          <td>.</td>
+                          <td>Розница</td>
+                          <td>20000</td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
-                          <td>.</td>
-                          <td>.</td>
-                          <td>.</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td colspan="2">...</td>
-                          <td>.</td>
+                          <td>Опт</td>
+                          <td>15000</td>
                         </tr>
                       </tbody>
                     </table>
@@ -740,6 +720,8 @@
       
   <script src="./script.js"></script>
 
+  <!-- Подключение JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <!-- Подключение JS файла Popper -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <!-- Подключение JS файла bootstrap 5 -->
